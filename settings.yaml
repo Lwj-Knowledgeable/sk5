@@ -1,0 +1,44 @@
+# ===== 运行模式 =====
+mock_mode: true          # true: 无硬件模拟；false: 连接真实设备
+
+# ===== Flask =====
+flask:
+  host: "0.0.0.0"
+  port: 8080
+  debug: true
+
+# ===== 认证 =====
+auth:
+  jwt_secret: "dev-jwt-secret-change-me"
+  jwt_algorithm: "HS256"
+  jwt_expiration: 630720000        # 秒，约 20 年
+  encrypt_secret: "dev-encrypt-secret-change-me"
+  cookie_name: "auth_token"
+  cookie_secret: "dev-cookie-secret-change-me"
+  cookie_expiration: 86400
+
+# ===== H3C AP =====
+ap:
+  host_template: "192.168.88.24{aid}"
+  username: "admin"
+  password: "327462zhou"
+  port: 13598
+
+# ===== RouterOS =====
+ros:
+  host: "10.0.0.1"
+  username: "firewall"
+  password: "327462@Zhou"
+  api_port: 18891
+
+# ===== OpenClash =====
+clash:
+  config_path: "config.yaml"   # mock 模式用示例文件
+  api_host: "10.0.0.254"
+  api_port: 9090
+  api_secret: "change-me"
+
+# ===== 路径 =====
+paths:
+  upload_dir: "uploads"
+  www_dir: "www"

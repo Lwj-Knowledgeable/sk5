@@ -1,0 +1,48 @@
+html, body {
+  /*max-height: 100%;*/
+  /*overflow: hidden;  !* 禁止整个页面滚动 *!*/
+  margin: 5px;
+}
+
+
+/*.listButs {*/
+/*  border-bottom: 20px;*/
+/*}*/
+.listButs > button {
+  margin-bottom: 20px;
+}
+
+.butsm {
+  margin: 8px 10px;
+}
+
+.blurred {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+/*.el-table--border, .el-table--group {*/
+/*  border-color: #add8e6 !important; !* 淡蓝色 *!*/
+/*}*/
+.el-table td, .el-table th.is-leaf {
+  border-bottom: 1px solid #add8e6 !important; /* 底部边框 */
+}
+.el-table--border th, .el-table--border td {
+  border-right: 1px solid #add8e6 !important; /* 右侧列间分割线 */
+}
+.el-table--border,  /* 带边框模式 */
+.el-table__inner-wrapper /* 表格容器 */
+{
+  border: 1px solid #add8e6 !important;
+  /*border-right: 1px solid #add8e6 !important; !* 右侧列间分割线 *!*/
+}
+/*:deep(.el-table__inner-wrapper::before) {*/
+/*  background-color: #add8e6 !important; !* 覆盖底部白线 *!*/
+/*}*/
+.el-table__body tr:hover td {
+  background: rgba(173, 216, 230, 0.1) !important; /* 淡蓝色透明背景 */
+}
+.el-table .cell{
+	padding: 0 5px;
+	
+}
